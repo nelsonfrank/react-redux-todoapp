@@ -1,0 +1,53 @@
+:root {
+  --bg-color-card: rgba(102, 204, 153, 0.2);
+  --bg-color-checkbox: rgba(102, 204, 153, 0.5);
+}
+
+.card {
+  padding: 0px;
+}
+
+.card--selected {
+  background-color: var(--bg-color-card) !important;
+}
+.card:hover {
+  background-color: var(--bg-color-card);
+}
+
+.ant-checkbox-checked .ant-checkbox-wrapper-checked {
+  background-color: var(--bg-color-checkbox);
+  color: var(--bg-color-checkbox);
+  border-color: var(--bg-color-checkbox);
+}
+.ant-card-body {
+  padding: 10px !important;
+}
+.card__content {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  width: 97%;
+  height: 100%;
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+}
+.card__title--name {
+  margin: 0;
+}
+
+.card__title--remaingtime {
+  margin: 0;
+  font-size: 12px;
+}
+.card__date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
