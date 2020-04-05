@@ -1,26 +1,23 @@
-:root {
-  --bg-color-card: rgba(102, 204, 153, 0.2);
-  --bg-color-checkbox: rgba(102, 204, 153, 0.5);
-}
+@bg-color-card: rgba(102, 204, 153, 0.2);
+@bg-color-checkbox: rgba(102, 204, 153, 0.5);
 
 .card {
   padding: 0px;
 }
 
 .card--selected {
-  background-color: var(--bg-color-card) !important;
+  background-color: @bg-color-card;
 }
 .card:hover {
-  background-color: var(--bg-color-card);
+  background-color: @bg-color-card;
 }
 
 .ant-checkbox-checked .ant-checkbox-wrapper-checked {
-  background-color: var(--bg-color-checkbox);
-  color: var(--bg-color-checkbox);
-  border-color: var(--bg-color-checkbox);
+  background-color: @bg-color-checkbox;
+  border-color: @bg-color-checkbox;
 }
 .ant-card-body {
-  padding: 10px !important;
+  padding: 10px;
 }
 .card__content {
   display: flex;
