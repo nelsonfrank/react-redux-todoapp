@@ -1,10 +1,11 @@
 import React from "react";
 import Card from "./components/card";
+import Header from "./header";
 
 function App() {
   return (
     <div>
-      <h2>Hello, World!</h2>
+      <Header />
       <Card
         title={"Code todo-app"}
         date="Today"
