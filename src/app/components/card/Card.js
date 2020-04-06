@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Checkbox } from "antd";
-import "./Card.css";
+import "./Card.less";
 
 const StyledCard = (props) => {
   const { title, date, remainingTime } = props;
@@ -14,7 +14,6 @@ const StyledCard = (props) => {
 
   return (
     <Card
-      size="small"
       className={`card ${selected ? "card--selected" : null}`}
       onClick={handleCheck}
     >
